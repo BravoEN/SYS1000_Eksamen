@@ -3,7 +3,7 @@
 Vi skal lage en nettsideprototype for fantasikunden "Homerentals"
 
 ## Medlemmer
-Eskil Nilsen, Hand Jørgen Moger Dokken, Ola Glenna Grostølen, 
+Eskil Nilsen, Hans Jørgen Moger Dokken, Ola Glenna Grostølen, Nikodem Jan Niezgoda, William August Walvatne, Adrian de Grijs Fjellstad
 
 ### Datamodeller og Videodemonstrasjon
 
