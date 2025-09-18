@@ -11,4 +11,4 @@ Eskil Nilsen, Hans Jørgen Moger Dokken, Ola Glenna Grostølen, Nikodem Jan Niez
 
 [Datamodell 2](Datamodell.drawio.pdf)
 
-<video controls src="Video.mp4" title="Videodemonstrasjon"></video>
+Last ned "Video.mp4" for videodemonstrasjon av nettsideprototypen
