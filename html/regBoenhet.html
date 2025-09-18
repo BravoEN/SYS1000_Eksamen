@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Registrer boenhet - Home Rentals</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+			<form class="navbarForm">
+				<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+				<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			
+			<div class="navbarHoyre">
+				<div class="brukerIcon">
+					<a href="logginn.html"><strong>Logg Inn</strong></a>
+					<a href="registrering.html"><strong>Registrer Deg</strong></a>
+				</div>
+				<div class="profilDropdown">
+					<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<a href="minSide.html"><strong>Min Side</strong></a>
+						<a href="soknad.html"><strong>Søknader</strong></a>
+						<a href="meldinger.html"><strong>Meldinger</strong></a>
+						<a href="favoritter.html"><strong>Favoritter</strong></a>
+						<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                        <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+						<a href="opphold.html"><strong>Opphold</strong></a>
+						<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+        <main class="regBoenhetContainer">
+            <div class="regBoenhetInfo">
+				<h1>Registrer boenhet</h1>
+                <label>Legg til navn/adresse på boenheten:</label>
+                <input type="text" placeholder="Navn på boenhet">
+                <div class="regBoenhetBilde">
+                    <img src="https://t4.ftcdn.net/jpg/05/81/84/71/360_F_581847176_eF540XqFGHDdGPZxyh5NtWHNzgs0XFk6.jpg" alt="Bilde av boenhet" style="width: 100%">
+					<button>Legg til bilde</button>
+                </div>
+            </div>
+        
+            <div class="regBoenhetAdjustmentForm">
+                <form>
+                    <div class="regBoenhetFormSection">
+                        <label>Legg til pris per natt (Norske Kroner):</label>
+                        <input type="number" placeholder="XXXX" min="0">
+                    </div>
+        
+                    <div class="regBoenhetFasiliteter">
+                        <p>Hvilke fasiliteter boligen har:</p>
+                        <label for="wifi">Wi-Fi:</label>
+						<input id="wifi" type="checkbox">
+						<label for="parkering">Parkering:</label>
+						<input id="parkering" type="checkbox">
+						<label for="kjokken">Kjøkken:</label>
+						<input id="kjokken" type="checkbox">
+						<label for="hengekoye">Hengekøye:</label>
+						<input id="hengekoye" type="checkbox">
+						<label for="peis">Peis:</label>
+						<input id="peis" type="checkbox">
+						<label for="balkong">Balkong:</label>
+						<input id="balkong" type="checkbox">
+						<label for="husdyr">Kjæledyr tillat:</label>
+						<input id="husdyr" type="checkbox">
+                    </div>
+        
+                    <div class="regBoenhetFormSection">
+                        <label>Legg til område/adresse:</label>
+                        <input type="text">
+                    </div>
+        
+                    <div class="regBoenhetFormSection">
+                        <label>Beskrivelse av boligen:</label>
+                        <textarea rows="5"></textarea>
+                    </div>
+        
+                    <div class="regBoenhetFormSection">
+                        <label>Boligtype:</label>
+                        <select>
+                            <option>Leilighet</option>
+                            <option>Hus</option>
+                            <option>Hybel</option>
+							<option>Bobil</option>
+                        </select>
+                    </div>
+        
+                    <div class="regBoenhetFormSection">
+                        <label>Husregler for boligen:</label>
+                        <textarea rows="3"></textarea>
+                    </div>
+        
+                    <div class="regBoenhetUpdate">
+                        <div class="regBoenhetFormButtons">
+                            <button type="submit" class="regBoenhetConfirmBtn">Legg til bolig</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+		
+		<footer>
+			<div>Home Rentals &copy; 2025</div>
+		</footer>
+	</body>
+</html>

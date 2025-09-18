@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Boenhet annonse - Home Rentals</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+			<form class="navbarForm">
+				<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+				<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			
+			<div class="navbarHoyre">
+				<div class="brukerIcon">
+					<a href="logginn.html"><strong>Logg Inn</strong></a>
+					<a href="registrering.html"><strong>Registrer Deg</strong></a>
+				</div>
+				<div class="profilDropdown">
+					<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<a href="minSide.html"><strong>Min Side</strong></a>
+						<a href="soknad.html"><strong>Søknader</strong></a>
+						<a href="meldinger.html"><strong>Meldinger</strong></a>
+						<a href="favoritter.html"><strong>Favoritter</strong></a>
+						<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                        <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+						<a href="opphold.html"><strong>Opphold</strong></a>
+						<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main class="boenhetAnnonse-topp">
+		  <div class="boenhetAnnonse-overskrift">
+			<h1>Hus ved fjellet – behagelig atmosfære</h1>
+		  </div>
+
+		  <div class="boenhetAnnonse-topWrapper">
+			<div class="boenhetAnnonse-bildeGalleri">
+			  <img src="https://static4.depositphotos.com/1021974/371/i/450/depositphotos_3712990-stock-photo-house-model.jpg" alt="Bilde 1">
+			  <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bilde 2">
+			  <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bilde 3">
+			</div>
+
+			<fieldset class="boenhetAnnonse-widget">
+			  <legend class="boenhetAnnonse-pris">2499 kr NOK <span class="boenhetAnnonse-perNatt">natt</span></legend>
+              
+			  <div class="boenhetAnnonse-datoContainer">
+				<div class="boenhetAnnonse-datoBoks">
+				  <label for="innsjekk">INNSJEKKING</label>
+				  <input type="date" id="innsjekk" name="innsjekk">
+				</div>
+				<div class="boenhetAnnonse-datoBoks">
+				  <label for="utsjekk">UTSJEKKING</label>
+				  <input type="date" id="utsjekk" name="utsjekk">
+				</div>
+			  </div>
+
+			  <div class="boenhetAnnonse-gjester">
+				<label for="gjester">GJESTER</label>
+				<select id="gjester" name="gjester">
+				  <option>1 gjest</option>
+				  <option>2 voksne</option>
+				  <option>2 voksne, 1 barn</option>
+				  <option>2 voksne, 2 barn</option>
+				</select>
+			  </div>
+
+			  <button class="boenhetAnnonse-reserverKnapp">RESERVER</button>
+			  <p class="boenhetAnnonse-infoTekst">Du blir ikke belastet ennå</p>
+			</fieldset>
+		  </div>
+
+		  <div class="boenhetAnnonse-vertInfo">
+			<div>
+			  <p><strong>Fritidsbolig, Oslo, Norge</strong><br><small>4 gjester • 2 soverom • 2 bad</small></p>
+			</div>
+			<div class="boenhetAnnonse-rating">
+			  <span>4.8 ★★★★★</span><small>38 anmeldelser</small>
+			</div>
+			<div class="boenhetAnnonse-utleier">
+			  <img src="../bilder/royBruker.png" alt="Utleier Roy">
+			  <span><strong>Roy</strong> er vertskap</span>
+			</div>
+			<button class="boenhetAnnonse-favoritt">&#9734; Legg til som favoritt</button>
+		  </div>
+		  
+		  <div class="boenhetAnnonse-beskrivelse">
+			<div>
+			  <h1>Beskrivelse</h1>
+			</div>
+			<p>
+				Moderne og lyst rekkehus i rolige omgivelser nær sentrum. Perfekt for familier eller venner med fullt utstyrt kjøkken, <br>
+				uteplass og gratis parkering. Kort vei til kollektivtransport og lokale butikkerLorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+				Duiaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		  </div>
+		  
+		  <div class="boenhetAnnonse-Fasiliteter">
+			<div class="boenhetAnnonse-FasiliteterOverskirft">
+			  <h1>Fasiliteter</h1>
+			</div>
+			
+			<div class="boenhetAnnonse-FasilitetTopLevel">
+				<div class="boenhetAnnonse-Fasilitetermbilde1">
+					<img src="../bilder/fjellutsikt.png" alt="Fjellutsikt">
+					<span><strong>Fjellutsikt</strong></span>
+				</div>
+				
+				<div class="boenhetAnnonse-Fasilitetermbilde2">
+					<img src="../bilder/peis.png" alt="Peis">
+					<span><strong>Peis</strong></span>
+				</div>
+				
+				<div class="boenhetAnnonse-Fasilitetermbilde3">
+					<img src="../bilder/kjøkken.png" alt="Kjøkken">
+					<span><strong>Kjøkken</strong></span>
+				</div>
+				
+				<div class="boenhetAnnonse-Fasilitetermbilde4">
+					<img src="../bilder/basseng.png" alt="Basseng">
+					<span><strong>Basseng</strong></span>
+				</div>
+				
+				<div class="boenhetAnnonse-Fasilitetermbilde5">
+					<img src="../bilder/dyrtillat.png" alt="Dyr tilltat">
+					<span><strong>Dyr tillat</strong></span>
+				</div>
+				
+				<div class="boenhetAnnonse-Fasilitetermbilde6">
+					<img src="../bilder/wifi.png" alt="Wifi">
+					<span><strong>Wifi</strong></span>
+				</div>
+				
+			</div>
+		</div>
+			
+			<div class="boenhetAnnonse-Kart">
+				<div class="boenhetAnnonse-kartOverskrift">
+					<h2>Nøyaktig posisjon gis ved bestilling</h2>
+				</div>
+				
+				<div class="boenhetAnnonse-KartGoogle">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3999.812724780135!2d10.725051112802614!3d59.917101363729714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416dd779ba357b%3A0x677038c9acc2591c!2sDet%20kongelige%20slott!5e0!3m2!1sno!2sno!4v1746279673836!5m2!1sno!2sno" 
+					width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>		
+		</main>
+		
+		<footer>
+			<div>Home Rentals &copy; 2025</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Meldinger - Home Rentals</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+			<form class="navbarForm">
+				<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+				<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			
+			<div class="navbarHoyre">
+				<div class="brukerIcon">
+					<a href="logginn.html"><strong>Logg Inn</strong></a>
+					<a href="registrering.html"><strong>Registrer Deg</strong></a>
+				</div>
+				<div class="profilDropdown">
+					<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<a href="minSide.html"><strong>Min Side</strong></a>
+						<a href="soknad.html"><strong>Søknader</strong></a>
+						<a href="meldinger.html"><strong>Meldinger</strong></a>
+						<a href="favoritter.html"><strong>Favoritter</strong></a>
+						<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                        <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+						<a href="opphold.html"><strong>Opphold</strong></a>
+						<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="meldingerContainer">
+			<!-- Venstre bar -->
+			<div class="meldingerSidebar">
+				<div class="meldingerSidebarHeader">
+					<h2>Meldinger</h2>
+					<div class="meldingerSearchChats">
+						<input type="text" placeholder="Q" class="meldingerChatSearch">
+					</div>
+				</div>
+				
+				<div class="meldingerChatListe">
+					<div class="meldingerChatItem">Chat</div>
+					<div class="meldingerChatItem">Chat</div>
+					<div class="meldingerChatItem">Chat</div>
+					<div class="meldingerChatItem">Chat</div>
+				</div>
+			</div>
+	  
+			<!-- Høyre meldinger vindu -->
+			<div class="meldingerChatWindow">
+				<div class="meldingerChatHeader">
+					<h3>"Bruker/navn"</h3>
+				</div>
+				
+				<div class="meldingerChatMessages">
+					<div class="meldingerTimestamp">data / tid</div>
+					<div class="meldingerMessage">"melding"</div>
+					
+					<div class="meldingerTimestamp">data / tid</div>
+					<div class="meldingerMessage">"melding"</div>
+				</div>
+	  
+				<div class="meldingerMessageInput">
+					<input type="text" placeholder="Skriv en melding...">
+					<button class="meldingerAttachBtn">Vedlegg</button>
+					<button class="meldingerSendBtn">Send</button>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div>Home Rentals &copy; 2025</div>
+		</footer>
+	</body>
+</html>

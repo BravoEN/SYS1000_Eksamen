@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Logg inn - Home Rentals</title>
+</head>
+<body>
+	<nav class="navbar">
+		<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+		<form class="navbarForm">
+			<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+			<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+		</form>
+			
+		<div class="navbarHoyre">
+			<div class="brukerIcon">
+				<a href="logginn.html"><strong>Logg Inn</strong></a>
+				<a href="registrering.html"><strong>Registrer Deg</strong></a>
+			</div>
+			<div class="profilDropdown">
+				<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<div class="dropdown-content">
+					<a href="minSide.html"><strong>Min Side</strong></a>
+					<a href="soknad.html"><strong>Søknader</strong></a>
+					<a href="meldinger.html"><strong>Meldinger</strong></a>
+					<a href="favoritter.html"><strong>Favoritter</strong></a>
+					<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                    <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+					<a href="opphold.html"><strong>Opphold</strong></a>
+					<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+    <div id="logginMain">
+        <h2 id="logginTittel">Logg inn</h2>
+        <form id="logginForm" action="#popupLoggin">
+			<h3 id="logginTittelForm">Fyll ut informasjonen din</h3>
+			<div class="logginFormGruppe">
+				<label id="logginLblBrukernavn" for="brukernavn">E-postadresse:</label>
+				<input id="brukernavn" type="email" placeholder="........" required>
+			</div>
+			<div class="logginFormGruppe">
+				<label id="logginLblPassord" for="passord">Passord:</label>
+				<input id="passord" type="password" placeholder="........" required>
+			</div>
+            <button id="logginSubmit" type="submit"><b>Logg inn</b></button><br>
+            <p>Har du ikke har bruker kan du registrere deg ved å klikke her!</p>
+            <a id="logginRegistrer" href="registrering.html">Registrer deg</a>
+        </form>
+		<div id="popupLoggin" class="hidden">
+			<div class="popupLogginInnhold">
+				<h2>Velkommen tilbake!</h2>
+				<p>Du er nå logget inn.</p>
+				<a href="hjem.html">Gå til forsiden</a>
+			</div>
+		</div>
+    </div>
+	
+	<footer>
+		<div>Home Rentals &copy; 2025</div>
+	</footer>
+</body>
+</html>

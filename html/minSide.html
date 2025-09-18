@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Min Side - Home Rentals</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+			<form class="navbarForm">
+				<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+				<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			
+			<div class="navbarHoyre">
+				<div class="brukerIcon">
+					<a href="logginn.html"><strong>Logg Inn</strong></a>
+					<a href="registrering.html"><strong>Registrer Deg</strong></a>
+				</div>
+				<div class="profilDropdown">
+					<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<a href="minSide.html"><strong>Min Side</strong></a>
+						<a href="soknad.html"><strong>Søknader</strong></a>
+						<a href="meldinger.html"><strong>Meldinger</strong></a>
+						<a href="favoritter.html"><strong>Favoritter</strong></a>
+						<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                        <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+						<a href="opphold.html"><strong>Opphold</strong></a>
+						<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<input type="checkbox" id="darkModeToggle" hidden>
+		<div class="theme-wrapper">
+			<main id="minSideMain">
+				<div id="minSideValg">
+					<h1>Min Side</h1>
+					<div id="minSideBruker">
+						<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+						<div id="minSideBrukerTekst">
+							<h2>Navn Navnesen</h2>
+							<p>navn@epost.no</p>
+						</div>
+					</div>
+					
+					<!-- Knapper -->
+					<div id="minSideInnstillinger" class="innstillingerButtons">
+						<label for="minSidePanel1">Personalia</label>
+						<label for="minSidePanel2">Språk</label>
+						<label for="minSidePanel3">Sikkerhet</label>
+						<label for="minSidePanel4">Personvern</label>
+						<label for="minSidePanel5">Betalingsinfo</label>
+						<label for="minSidePanel6">Annet</label>
+						<label for="minSidePanel7" id="minSideDeaktiver">Deaktiver Konto</label>
+					</div>
+					
+				</div>
+				
+				<div id="minSideInnhold">
+					<input type="radio" name="panel" id="minSidePanel1" hidden checked>
+					<input type="radio" name="panel" id="minSidePanel2" hidden>
+					<input type="radio" name="panel" id="minSidePanel3" hidden>
+					<input type="radio" name="panel" id="minSidePanel4" hidden>
+					<input type="radio" name="panel" id="minSidePanel5" hidden>
+					<input type="radio" name="panel" id="minSidePanel6" hidden>
+					<input type="radio" name="panel" id="minSidePanel7" hidden>
+
+					<div class="panelContainer">
+					
+						<!-- Personalia -->
+						<div class="minSidePanel minSidePanel1">
+							<h2>Personalia</h2>
+							<form id="personaliaForm" action="#popupLagret">
+								<div class="personaliaFormGruppe">
+									<label id="personaliaLblFornavn" for="personaliaFornavn">Fornavn:</label>
+									<input id="personaliaFornavn" type="text" placeholder="Navn">
+								</div>
+								<div class="personaliaFormGruppe">
+									<label id="personaliaLblEtternavn" for="personaliaEtternavn">Etternavn:</label>
+									<input id="personaliaEtternavn" type="text" placeholder="Navnesen">
+								</div>
+								<div class="personaliaFormGruppe">
+									<label id="personaliaLblTel" for="personaliaTel">Telefonnummer:</label>
+									<input id="personaliaTel" type="tel" placeholder="+47 999 99 999">
+								</div>
+								<div class="personaliaFormGruppe">
+									<label id="personaliaLblEpost" for="personaliaEpost">E-postadresse:</label>
+									<input id="personaliaEpost" type="email" placeholder="navn@epost.no">
+								</div>
+								<div class="personaliaFormGruppe">
+									<label id="personaliaLblPassord" for="personaliaPassord">Passord:</label>
+									<input id="personaliaPassord" type="password" placeholder="••••••••••••">
+								</div>
+								<button id="personaliaSubmit" type="submit"><b>Lagre endringer</b></button>
+                                <div class="personaliaFormGruppe minSideVert">
+									<p>Dersom du ikke har registrert deg som vert, kan du gjøre det her:</p>
+									<a href="regSomVert.html" target="_blank">Registrer deg som vert</a>
+								</div>
+								<div id="popupLagret" class="hidden">
+									<div class="popupLagretInnhold">
+										<p>Dine endringer har blitt lagret!</p>
+                                        <a href="minSide.html">Lukk</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						
+						<!-- Språk -->
+						<div class="minSidePanel minSidePanel2">
+							<h2>Språk</h2>
+							<label for="minSideSprak">Velg ditt foretrukne språk:</label>
+							<select id="minSideSprak" name="language">
+								<option value="no">Norsk</option>
+								<option value="en">English</option>
+								<option value="fr">Français</option>
+								<option value="es">Español</option>
+								<option value="ar">عربي (Arabic)</option>
+							</select>
+						</div>
+						
+						<!-- Sikkerhet -->
+						<div class="minSidePanel minSidePanel3">
+							<h2>Sikkerhet</h2>
+							<a href="sikkerhet.html" target="_blank">Sikkerhetserklæring for Home Rentals</a>
+							<div class="minSideSikkerhet">
+								<p>Krev ID-verifisering for oppholdsavtale:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+							<div class="minSideSikkerhet">
+								<p>Deaktiver kontoen automatisk ved 60 dagers inaktivitet:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+							<div class="minSideSikkerhet">
+								<p>Skjul boligadresse frem til inngått oppholdsavtale:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+							<div class="minSideSikkerhet">
+								<p>SMS-varsel ved mistenkelig aktivitet:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+						</div>
+						
+						<!-- Personvern -->
+						<div class="minSidePanel minSidePanel4">
+							<h2>Personvern</h2>
+							<a href="personvern.html" target="_blank">Personvernerklæring for Home Rentals</a>
+							<div class="minSideSikkerhet">
+								<p>Skjul fullt navn frem til inngått avtale:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+							<div class="minSideSikkerhet">
+								<p>Skjul kontaktinfo frem til inngått avtale:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+							<div class="minSideSikkerhet">
+								<p>Tillat tilsendt reklame på e-post:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+							<div class="minSideSikkerhet">
+								<p>Del anonymisert data med Home Rentals:</p>
+								<label class="minSideSwitch">
+									<input type="checkbox">
+									<span class="minSideSlider"></span>
+								</label>
+							</div>
+						</div>
+						
+						<!-- Betalingsinfo -->
+						<div class="minSidePanel minSidePanel5">
+							<h2>Betalingsinfo</h2>
+							<form id="betalingForm" action="#betalingLagret">
+								<div class="betalingFormGruppe">
+									<label for="betalingKortNavn">Navn på eier av kortet:</label>
+									<input id="betalingKortNavn" type="text" placeholder="Navn Navnesen">
+								</div>
+								<div class="betalingFormGruppe">
+									<label for="betalingKonto">Kontonummer:</label>
+									<input id="betalingKonto" type="text" placeholder="1234 56 78910">
+								</div>
+								<div class="betalingFormGruppe">
+									<label for="betalingKort">Kortnummer:</label>
+									<input id="betalingKort" type="text" placeholder="1234 5678 9101 1121">
+								</div>
+								<div class="betalingFormGruppe">
+									<label for="betalingKortDato">Utløpsdato på kortet:</label>
+									<input id="betalingKortDato" type="month" value="2026-01" lang="no">
+								</div>
+								<div class="betalingFormGruppe">
+									<label for="betalingCVC">CVC:</label>
+									<input id="betalingCVC" type="text" placeholder="* * *">
+								</div>
+								<button id="betalingSubmit" type="submit"><b>Lagre endringer</b></button>
+								<div id="betalingLagret" class="hidden">
+									<div class="betalingLagretInnhold">
+										<p>Dine endringer har blitt lagret!</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						
+						<!-- Annet -->
+						<div class="minSidePanel minSidePanel6">
+							<h2>Annet</h2>
+							<div class="darkmodeToggleWrapper">
+								<label for="darkModeToggle" class="darkmodeLabel">Mørk modus</label>
+							</div>
+						</div>
+						
+						<!-- Deaktiver Konto -->
+						<div class="minSidePanel minSidePanel7">
+							<h2>Deaktiver Konto</h2>
+							<p>Er du sikker på at du ønsker å deaktivere din konto?</p>
+							<a href="#popupDeaktiverJa">Ja</a>
+							<a href="#popupDeaktiverNei">Nei</a>
+						</div>
+						<div id="popupDeaktiverJa" class="hidden">
+							<div class="popupJaInnhold">
+								<h2>Ha det bra :(</h2>
+								<p>Din bruker er nå deaktivert.</p>
+								<a href="hjem.html">Lukk</a>
+							</div>
+						</div>
+						<div id="popupDeaktiverNei" class="hidden">
+							<div class="popupNeiInnhold">
+								<h2>Takk!</h2>
+								<p>Takk for at du fortsetter å bruke Home Rentals!</p>
+								<a href="minSide.html">Lukk</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		
+		<footer>
+			<div>Home Rentals &copy; 2025</div>
+		</footer>
+	</body>
+</html>

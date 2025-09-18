@@ -1,0 +1,1904 @@
+/* Navbar */
+* {
+	font-family: sans-serif; 
+}
+
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+}
+
+.logo {
+	height: 80px;
+	display: block;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ff9e21;
+	height: 80px;
+	border-bottom: 5px solid #ffd258;
+	position: relative;
+	z-index: 1000;
+}
+
+.navbarForm {
+	margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    height: 100%;
+	overflow: hidden;
+}
+
+.navbarForm input, .navbarForm button {
+    box-sizing: border-box;
+    margin-top: 0;
+	margin-bottom: 0;
+    border: none;
+    line-height: normal;
+}
+
+.sokeFelt {
+	text-align: left;
+	text-decoration: none;
+	background-color: #ffd258;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	color: black;
+	padding: 5px 10px;
+	margin-right: 3px;
+	width: 480px;
+	height: 40px;
+}
+
+.sokeKnapp {
+	float: right;
+	padding: 5px 10px;
+	background-color: #ffd258;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	height: 40px;
+}
+
+.sokeKnapp:hover {
+	background-color: #cfa02f;
+}
+
+.brukerIcon a {
+	text-decoration: none;
+	color: black;
+	background-color: #ffd258;
+	font-size: 15px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.brukerIcon a:hover{
+	background-color: #cfa02f;
+}
+
+.brukerIcon {
+	margin: 10px 10px 0px 20px;
+}
+
+.navbarHoyre {
+	display: flex;
+}
+
+.profilDropbtn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	margin-right: 40px;
+}
+
+.profilDropbtn i {
+	text-decoration: none;
+	font-size: 40px;
+	color: black;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 58px;
+	right: 30px;
+	background-color: #ffd258;
+	min-width: 160px;
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
+}
+
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	margin: 5px 0px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+	background-color: #cfa02f;
+	color: black;
+}
+
+.profilDropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* CSS for footer */
+footer {
+	text-align: center;
+	color: black;
+	background-color: #ff9e21;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	border-top: 5px solid #ffd258;
+}
+
+/* CSS for kontakt-siden */
+.kontaktMain {
+	display: flex;
+	width: 90vw;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding: 30px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.kontaktMain div {
+	margin: 40px 20px;
+}
+
+.kontaktMain a {
+	background-color: #ffd258;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+}
+
+#kontaktInfo {
+	width: 35vw;
+}
+
+#kundeservice {
+	margin-top: 80px;
+	margin-left: 100px;
+	width: 35vw;
+}
+
+#kundeservice img {
+	width: 600px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+/* Registrer deg*/
+#registrering{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+#registrerForm{
+    text-align: center;
+    width: 600px;
+    background-color: #ff9e21;
+    padding: 30px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#registrerForm input {
+	font-size: 20px;
+}
+
+#registrerVert{
+    padding-left: 10px;
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+#regVertGruppe {
+	margin: 30px 0px;
+}
+
+#registrerTittel{
+    text-align: center;
+	margin-top: 0;
+}
+
+#regVilkar{
+    padding-left: 10px;
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+#regVilkarGruppe {
+	margin: 30px 0px;
+}
+
+#registrerSubmit{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7px;
+	border: none;
+    background-color: #ffd258;
+	cursor: pointer;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+#registrerSubmit:hover {
+	background-color: #cfa02f;
+}
+
+.registrerFormGruppe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.registrerFormGruppe label {
+	width: 150px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.registrerFormGruppe input {
+	flex: 1;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+#regLoggin:hover {
+	background-color: #cfa02f;
+}
+
+#regLoggin {
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd258;
+	font-size: 20px;
+}
+
+#popupReg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+#popupReg:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupRegInnhold {
+    background-color: #ffd258;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.popupRegInnhold h2 {
+    margin-top: 0;
+}
+
+.popupRegInnhold a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff9e21;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.popupRegInnhold a:hover {
+    background-color: #cfa02f;
+}
+
+/* logg in */
+#logginForm{
+    background-color: #ff9e21;
+    width: 600px;
+    text-align: center;
+	padding: 30px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#logginTittelForm {
+    text-align: center;
+	margin-top: 0;
+}
+
+.logginFormGruppe {
+	display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logginFormGruppe label {
+	width: 150px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.logginFormGruppe input {
+	flex: 1;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+#logginForm input {
+	font-size: 20px;
+}
+
+#logginMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+#logginRegistrer:hover, #logginSubmit:hover {
+	background-color: #cfa02f;
+}
+
+#logginRegistrer{
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd258;
+	font-size: 20px;
+}
+
+#logginSubmit{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7px;
+	border: none;
+    background-color: #ffd258;
+	cursor: pointer;
+	font-size: 20px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+#popupLoggin {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+#popupLoggin:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupLogginInnhold {
+    background-color: #ffd258;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.popupLogginInnhold h2 {
+    margin-top: 0;
+}
+
+.popupLogginInnhold a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff9e21;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.popupLogginInnhold a:hover {
+    background-color: #cfa02f;
+}
+
+/* Bruksvilkår og vertskapsvilkår */
+.vilkarMain {
+	display: flex;
+	width: 90vw;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding: 20px 20px;
+}
+
+.vilkarMain div {
+	margin: 0px 50px;
+	font-size: 18px;
+	width: 700px;
+}
+
+#vilkarBilde img {
+	width: 500px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-top: 150px;
+	margin-left: 50px;
+}
+
+/* Personvernerklæring */
+.personvernMain {
+	display: flex;
+	width: 90vw;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding: 20px 20px;
+}
+
+.personvernMain div {
+	margin: 0px 50px;
+	font-size: 18px;
+	width: 700px;
+}
+
+#personvernBilde img {
+	width: 500px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-top: 150px;
+	margin-left: 50px;
+}
+
+/* Registrer som vert */
+#regsomvert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-bottom: 60px;
+	font-size: 20px;
+}
+
+#regsomvert h1 {
+	margin: 40px;
+	font-size: 30px;
+}
+
+#regVertForm {
+	background-color: #ff9e21;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+#regVertForm p {
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#vertBorderbox { 
+    width: 400px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#vertknapp {
+    background-color: #ffd258;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#vertknapp a {
+	color: black;
+	text-decoration: none;
+}
+
+#vertknapp:hover {
+	background-color: #cfa02f;
+}
+
+#vertVilkarCheck {
+	cursor: pointer;
+	transform: scale(1.5);
+	margin-top: 20px;
+}
+
+#popupVert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+#popupVert:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupVertInnhold {
+    background-color: #ffd258;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.popupVertInnhold h2 {
+    margin-top: 0;
+}
+
+.popupVertInnhold a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff9e21;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.popupVertInnhold a:hover {
+    background-color: #cfa02f;
+}
+
+/* Hjem */
+#hjemMain {
+	margin-top: 20px;
+}
+
+#hjemFiltrer{
+	display: flex;
+	height: 42px;
+	justify-content: space-around;
+	padding: 5px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #ff9e21;
+}
+
+.hjemFilter{
+	display: inline;
+	width: 25%;
+	border-left: 3px solid #ff9e21;
+	padding: 5px;
+	font-size: 18px;
+	right: 0;
+}
+
+#hjemFilterForm {
+	position: fixed;
+	height: 100vh;
+	max-width: 400px;
+	margin-left: 10px;
+}
+
+.hjemPrisintervall{
+	width: 40px;
+	margin: 5px;
+}
+
+.hjemInputText{
+	width: 35px
+}
+
+.hjemBoenheter{
+	display: inline;
+	width: 75%;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 0px 50px;
+}
+
+.hjemBoenhet{
+	display: inline-block;
+	width: 200px;
+	background-color: #d9d9d9;
+	text-align: center;
+	margin: 20px;
+	text-decoration: none;
+	color: black;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	font-weight: bold;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.hjemBoenhet img{
+	width: 200px;
+	height: 130px;
+}
+
+.hjemBoenhet:hover {
+	filter: brightness(85%);
+}
+
+.hjemSokBoenheter{
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.hjemBotyper {
+	background-color: #ffd258;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	cursor: pointer;
+	border: none;
+}
+
+.hjemBotyper:hover {
+	background-color: #cfa02f;
+}
+
+.hjemFilter p {
+	margin-bottom: 5px;
+}
+
+#fasiliteter input {
+	transform: scale(1.5);
+}
+
+#leieperiode {
+	display: flex;
+}
+
+#leieperiode input {
+	margin-top: 5px;
+}
+
+#leieSlutt {
+	margin-left: 30px;
+}
+
+/* Søknader */
+#soknadMain {
+	margin: 20px 50px 100px;
+}
+
+.soknadBolig{
+	display: flex;
+	background-color: #ff9e21;
+	margin: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.soknadBolig img{
+	width: 200px;
+}
+
+.soknadBolig a{
+	text-decoration: none;
+}
+
+.soknadInfo{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 75%;
+	padding-left: 5px;
+}
+
+.soknadInfo a{
+	border-bottom: black solid;
+	color: black;
+	width: 100%;
+	padding: 5px;
+}
+
+#soknadTittel{
+	padding: 5px;
+}
+
+.soknadStatus{
+	border-top: black solid;
+	padding: 5px;
+	text-align: end;
+}
+
+/* Min Side */
+#minSideMain {
+	display: flex;
+	font-size: 18px;
+}
+
+#minSideValg {
+	width: 30%;
+	height: 100vh;
+	padding-left: 40px;
+	border-right: 5px solid #ffd258;
+}
+
+#minSideBruker {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+#minSideBruker i {
+	font-size: 80px;
+}
+
+#minSideBrukerTekst {
+	display: flex;
+	flex-direction: column;
+}
+
+#minSideBruker h2 {
+	margin-bottom: 5px;
+}
+
+#minSideBruker p {
+	margin-top: 0px;
+}
+
+#minSideInnhold {
+    flex: 1;
+}
+
+.innstillingerButtons {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 350px;
+}
+
+.innstillingerButtons label {
+    background-color: #ffd258;
+	border: none;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	width: 140px;
+	height: 30px;
+	align-content: center;
+	text-align: center;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.innstillingerButtons label:hover {
+    background-color: #cfa02f;
+}
+
+.panelContainer {
+    position: relative;
+    min-height: 200px;
+}
+
+.minSidePanel {
+    display: none;
+	padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.minSidePanel h2 {
+	margin-left: 30px;
+}
+
+.minSidePanel a {
+	margin-left: 30px;
+}
+
+#minSidePanel1:checked ~ .panelContainer .minSidePanel1,
+#minSidePanel2:checked ~ .panelContainer .minSidePanel2,
+#minSidePanel3:checked ~ .panelContainer .minSidePanel3,
+#minSidePanel4:checked ~ .panelContainer .minSidePanel4,
+#minSidePanel5:checked ~ .panelContainer .minSidePanel5,
+#minSidePanel6:checked ~ .panelContainer .minSidePanel6,
+#minSidePanel7:checked ~ .panelContainer .minSidePanel7 {
+    display: block;
+    position: relative;
+}
+
+#minSideDeaktiver {
+	margin-top: 50px;
+}
+
+#personaliaForm{
+    text-align: center;
+    width: 600px;
+    padding: 30px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#personaliaForm input {
+	font-size: 20px;
+}
+
+#personaliaSubmit{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7px;
+	border: none;
+    background-color: #ffd258;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+#personaliaSubmit:hover {
+	background-color: #cfa02f;
+}
+
+.personaliaFormGruppe a {
+    text-decoration: none;
+    border-radius: 10px;
+	color: black;
+	font-weight: bold;
+    padding: 7px;
+	border: none;
+    background-color: #ffd258;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.personaliaFormGruppe a:hover {
+	background-color: #cfa02f;
+}
+
+.minSideVert {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.personaliaFormGruppe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.personaliaFormGruppe label {
+	width: 200px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.personaliaFormGruppe input {
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px;
+	background-color: #ffd258;
+}
+
+.minSidePanel2 label {
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.minSidePanel2 select {
+	background-color: #ddd;
+	border: 2px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 5px 15px;
+	font-size: 20px;
+}
+
+.minSidePanel7 p {
+	margin-left: 30px;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.minSidePanel7 a {
+	text-decoration: none;
+	color: black;
+	border: none;
+	border-radius: 10px;
+	background-color: #ffd258;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 7px;
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+.minSidePanel7 a:hover {
+	background-color: #cfa02f;
+}
+
+#popupDeaktiverJa, #popupDeaktiverNei, #popupLagret {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+#popupDeaktiverJa:target, #popupDeaktiverNei:target, #popupLagret:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupJaInnhold, .popupNeiInnhold, .popupLagretInnhold {
+    background-color: #ffd258;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.popupJaInnhold h2, .popupNeiInnhold h2, .popupLagretInnhold h2 {
+    margin-top: 0;
+}
+
+.popupJaInnhold a, .popupNeiInnhold a, .popupLagretInnhold a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff9e21;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.popupJaInnhold a:hover, .popupNeiInnhold a:hover, .popupLagretInnhold a:hover {
+    background-color: #cfa02f;
+}
+
+/* Av/På knapp */
+.minSideSwitch {
+	position: relative;
+	display: inline-block;
+	width: 53px;
+	height: 26px;
+}
+
+.minSideSwitch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.minSideSlider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.minSideSlider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 4px;
+	right: 4px;
+	top: 3px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .minSideSlider {
+	background-color: #4CAF50;
+}
+
+input:checked + .minSideSlider:before {
+	transform: translateX(26px);
+}
+
+.minSideSikkerhet {
+	margin-left: 30px;
+	padding-top: 20px;
+}
+
+.minSideSikkerhet p {
+	margin-bottom: 10px;
+}
+
+#betalingForm{
+    text-align: center;
+    width: 600px;
+    padding: 30px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#betalingForm input {
+	font-size: 20px;
+}
+
+#betalingSubmit{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7px;
+	border: none;
+    background-color: #ffd258;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+#betalingSubmit:hover {
+	background-color: #cfa02f;
+}
+
+.betalingFormGruppe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.betalingFormGruppe label {
+	width: 200px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.betalingFormGruppe input {
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px;
+	background-color: #ffd258;
+}
+
+#betalingKortNavn {
+	width: 300px;
+}
+
+#betalingKonto {
+	width: 150px;
+}
+
+#betalingKort {
+	width: 210px;
+}
+
+#betalingKortDato {
+	width: 160px;
+}
+
+#betalingCVC {
+	width: 50px;
+}
+
+#betalingLagret {
+    display: none;
+	font-size: 25px;
+}
+
+#betalingLagret:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.betalingLagretInnhold {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Dark Mode Toggle Switch Styling */
+.darkmodeToggleWrapper {
+	margin-top: 1em;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.darkmodeSwitch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+}
+
+.darkmodeSwitch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.darkmodeLabel {
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #ffd258;
+	font-weight: bold;
+}
+
+.darkmodeLabel:hover {
+	background-color: #cfa02f;
+}
+
+/* The magic part — dark mode styling using checkbox state */
+#darkModeToggle:checked ~ .theme-wrapper {
+	background-color: #1e1e1e;
+	color: #f0f0f0;
+}
+
+#darkModeToggle:checked ~ .theme-wrapper a {
+	color: white;
+}
+
+#darkModeToggle:checked ~ .theme-wrapper input,
+#darkModeToggle:checked ~ .theme-wrapper select,
+#darkModeToggle:checked ~ .theme-wrapper button,
+#darkModeToggle:checked ~ .theme-wrapper .innstillingerButtons label,
+#darkModeToggle:checked ~ .theme-wrapper .minSidePanel7 a,
+#darkModeToggle:checked ~ .theme-wrapper .popupJaInnhold,
+#darkModeToggle:checked ~ .theme-wrapper .popupNeiInnhold,
+#darkModeToggle:checked ~ .theme-wrapper .popupJaInnhold a,
+#darkModeToggle:checked ~ .theme-wrapper .popupNeiInnhold a,
+#darkModeToggle:checked ~ .theme-wrapper .darkmodeLabel {
+	background-color: #333;
+	color: white;
+	border: 1px solid #555;
+}
+
+#darkModeToggle:checked ~ .theme-wrapper .innstillingerButtons label:hover,
+#darkModeToggle:checked ~ .theme-wrapper button:hover,
+#darkModeToggle:checked ~ .theme-wrapper .minSidePanel7 a:hover,
+#darkModeToggle:checked ~ .theme-wrapper .popupJaInnhold a:hover,
+#darkModeToggle:checked ~ .theme-wrapper .popupNeiInnhold a:hover,
+#darkModeToggle:checked ~ .theme-wrapper .darkmodeLabel:hover {
+	filter: brightness(140%);
+}
+
+.minSidePanel6 div {
+	margin-left: 30px;
+}
+
+/* CSS for Meldinger */
+.meldingerContainer {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 140px); 
+    padding-bottom: 60px; 
+}
+
+/* Venstre sidebar */
+.meldingerSidebar {
+    width: 300px;
+    border-right: 2px solid #eee;
+    padding: 1rem;
+}
+
+.meldingerSidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.meldingerSearchChats {
+    width: 30%;
+    margin-left: auto; 
+}
+
+.meldingerChatSearch {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid #eee;
+}
+
+.meldingerChatList {
+    margin-top: 1rem;
+}
+
+.meldingerChatItem {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.meldingerChatItem:hover {
+    background-color: #ffd258;
+}
+
+/* Høyre melding vindu */
+.meldingerChatWindow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.meldingerChatHeader {
+    padding: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.meldingerChatMessages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    margin-bottom: 60px; 
+}
+
+.meldingerTimestamp {
+    color: #666;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.meldingerMessage {
+    background-color: #f0f0f0;
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    max-width: 70%;
+}
+
+/* Melding Input */
+.meldingerMessageInput {
+    display: flex;
+    padding: 1rem;
+    gap: 0.5rem;
+    border-top: 2px solid #eee;
+}
+
+.meldingerMessageInput input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.meldingerAttachBtn, .meldingerSendBtn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffd258;
+    cursor: pointer;
+}
+
+.meldingerAttachBtn:hover, .meldingerSendBtn:hover {
+    background-color: #ffb21e;
+}
+
+/* CSS For Endreboenhet */
+.endreBoenhetContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.endreBoenhetInfo {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.endreBoenhetBilde {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.endreBoenhetAdjustmentForm {
+    background: #fff;
+    padding: 2rem;
+	padding-top: 100px;
+}
+
+.endreBoenhetFormSection {
+    margin-bottom: 40px;
+}
+
+.endreBoenhetFormSection label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.endreBoenhetFormSection input,
+.endreBoenhetFormSection textarea,
+.endreBoenhetFormSection select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.endreBoenhetFasiliteter {
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.endreBoenhetFasiliteter input {
+	transform: scale(1.5);
+	margin-right: 20px;
+}
+
+.endreBoenhetUpdate {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.endreBoenhetFormButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.endreBoenhetConfirmBtn {
+    background: #ffd258;
+    color: black;
+	padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.endreBoenhetConfirmBtn:hover {
+	background-color: #cfa02f;
+}
+
+.endreBoenhetCancelBtn {
+    background: #ddd;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.endreBoenhetCancelBtn:hover {
+	filter: brightness(75%);
+}
+
+.endreBoenhetDeleteBtn {
+	background: red;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.endreBoenhetDeleteBtn:hover {
+	filter: brightness(75%);
+}
+
+/* Favoritter */
+#favoritterMain {
+	margin-bottom: 60px;
+}
+
+.favoritt {
+	margin-top:30px;
+	margin-left:50px;
+}
+
+.fav-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-bottom: 60px;
+}
+
+.fav-card-container a {
+	text-decoration: none;
+	color: black;
+}
+
+.fav-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 4px 4px 5px 6px rgba(0,0,0,0.1);
+    margin:15px;
+    transition: transform 0.2s;
+	cursor: pointer;
+}
+
+.fav-card:hover {
+    transform: scale(1.05);
+}
+
+.fav-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.fav-card-tekst {
+    padding: 15px;
+}
+
+.fav-card-tekst h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.fav-card-tekst p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.fav-card-tekst .price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Mine Boenheter */
+.boenheter-tekst{
+	display:flex;
+	align-items:center;
+	margin-top:30px;
+	margin-left:50px;
+	background-color:;
+}
+
+.boenheter-btn{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-left:30px;
+	font-size:20px;
+	background-color:#ff9e21;
+	border:none;
+	border-radius:10px;
+	padding: 10px;
+	transition: transform 0.2s;
+	cursor: pointer;
+}
+
+.boenheter-btn:hover {
+	transform: scale(1.05);
+	filter: brightness(75%);
+}
+
+/* Opphold */
+#oppholdMain {
+	width: 90vw;
+	margin-left: 60px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.oppholdListeBoenhet img{
+	width: 200px;
+}
+
+.oppholdListeBoenhet{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	background-color: #ffd258;
+	padding: 7px;
+	border-radius: 10px;
+}
+
+.oppholdListeBoenhet:hover {
+	filter: brightness(75%);
+}
+
+#oppholdListe{
+	margin: 0px  20px 0px 5px
+}
+
+.opphold{
+	display: flex;
+	justify-content: space-between;
+}
+
+#oppholdBoenhet img{
+	width: 600px;
+	border-radius: 10px;
+}
+
+#oppholdBoenhet th, td{
+	padding: 5px 20px;
+}
+
+.oppholdAnmeldelse{
+	padding: 5px;
+	font-size: 20px;
+}
+
+#oppholdSend {
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	padding: 7px;
+	background-color: #ffd258;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#oppholdSend:hover {
+	background-color: #cfa02f;
+}
+
+#oppholdEndreOpphold{
+	border: #888 solid;
+	padding: 15px;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
+/* CSS for registrere boenhet */
+.regBoenhetContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.regBoenhetInfo {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.regBoenhetInfo h1 {
+	margin-bottom: 30px;
+}
+
+.regBoenhetInfo label {
+	font-size: 20px;
+}
+
+.regBoenhetInfo input {
+	transform: scale(1.5);
+	margin-left: 45px;
+	margin-top: 10px;
+	padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.regBoenhetBilde {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.regBoenhetBilde button {
+	transform: scale(1.5);
+	border: none;
+	border-radius: 10px;
+	padding: 7px;
+	background-color: #ffd258;
+	cursor: pointer;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.regBoenhetBilde button:hover {
+	background-color: #cfa02f;
+}
+
+.regBoenhetAdjustmentForm {
+    background: #fff;
+    padding: 2rem;
+	padding-top: 120px;
+}
+
+.regBoenhetFormSection {
+    margin-bottom: 40px;
+}
+
+.regBoenhetFormSection label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.regBoenhetFormSection input,
+.regBoenhetFormSection textarea,
+.regBoenhetFormSection select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.regBoenhetFasiliteter {
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.regBoenhetFasiliteter input {
+	transform: scale(1.5);
+	margin-right: 20px;
+}
+
+.regBoenhetUpdate {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.regBoenhetFormButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.regBoenhetConfirmBtn {
+    background: #ffd258;
+    color: black;
+	padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.regBoenhetConfirmBtn:hover {
+	background-color: #cfa02f;
+}
+
+/* CSS For boenhetAnnonse */
+.boenhetAnnonse-topp {
+	padding: 10px;
+	background: #fff;
+	margin-left: 50px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+ 
+.boenhetAnnonse-topWrapper {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+ 
+.boenhetAnnonse-bildeGalleri {
+	display: flex;
+	gap: 10px;
+}
+ 
+.boenhetAnnonse-bildeGalleri img {
+	width: 400px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+ 
+.boenhetAnnonse-widget {
+	background-color: #f2f2f2;
+	padding: 15px;
+	border-radius: 12px;
+	width: 250px;
+}
+ 
+.boenhetAnnonse-pris {
+	font-size: 22px;
+	font-weight: bold;
+}
+ 
+.boenhetAnnonse-datoContainer {
+	display: flex;
+	gap: 10px;
+	margin: 10px 0;
+}
+ 
+.boenhetAnnonse-datoBoks {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+ 
+.boenhetAnnonse-gjester {
+	margin: 10px 0;
+}
+ 
+.boenhetAnnonse-reserverKnapp {
+	background-color: orange;
+	color: black;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.boenhetAnnonse-reserverKnapp:hover {
+	filter: brightness(75%);
+}
+ 
+.boenhetAnnonse-infoTekst {
+	text-align: center;
+	font-size: 0.9em;
+	color: #888;
+	margin-top: 10px;
+}
+ 
+.boenhetAnnonse-vertInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+ 
+.boenhetAnnonse-utleier img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+ 
+.boenhetAnnonse-favoritt {
+	background: none;
+	border:none;
+	color: gray;
+	font-size: 20px;
+	cursor: pointer;
+}
+ 
+.boenhetAnnonse-favoritt{
+	color: gold;
+	padding-right:200px;
+}
+
+.boenhetAnnonse-beskrivelse{
+	background-color:#f2f2f2;
+	color: black;
+	padding-top:80px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:80px;
+	width: 1400px;
+	border-radius: 6px;
+	border:none;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin-left:0px;
+}
+ 
+.boenhetAnnonse-Fasiliteter{
+	background-color:#f2f2f2;
+	color: black;
+	padding-top:80px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:80px;
+	width: 1400px;
+	border-radius: 6px;
+	border:none;
+	margin-bottom:40px;
+	margin-left:0px;
+}
+.boenhetAnnonse-FasilitetTopLevel img {
+	width: 40px;    
+	height: 40px;
+	border-radius:50%;
+	vertical-align:middle;
+	margin-right: 8px;
+}
+ 
+ 
+.boenhetAnnonse-FasilitetTopLevel{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	gap:10px;
+}
+ 
+.boenhetAnnonse-Kart{
+	background-color:#f2f2f2;
+	color: black;
+	padding-top:80px;
+	padding-bottom:40px;
+	padding-left: 300px;
+	width: 1140px;
+	border-radius: 6px;
+	border:none;
+	margin-bottom:80px;
+	margin-left:0px;
+}
+ 
+.boenhetAnnonse-kartOverskrift{
+	padding-bottom:10px;
+}

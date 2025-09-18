@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registrer deg - Home Rentals</title>
+</head>
+<body>
+	<nav class="navbar">
+		<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+		<form class="navbarForm">
+			<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+			<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+		</form>
+			
+		<div class="navbarHoyre">
+			<div class="brukerIcon">
+				<a href="logginn.html"><strong>Logg Inn</strong></a>
+				<a href="registrering.html"><strong>Registrer Deg</strong></a>
+			</div>
+			<div class="profilDropdown">
+				<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<div class="dropdown-content">
+					<a href="minSide.html"><strong>Min Side</strong></a>
+					<a href="soknad.html"><strong>Søknader</strong></a>
+					<a href="meldinger.html"><strong>Meldinger</strong></a>
+					<a href="favoritter.html"><strong>Favoritter</strong></a>
+					<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                    <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+					<a href="opphold.html"><strong>Opphold</strong></a>
+					<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+    <div id="registrering">
+        <h2>Velkommen til Home Rentals!</h2>
+        <form id="registrerForm" action="#popupReg">
+            <h3 id="registrerTittel">Fyll ut informasjonen din</h3>
+			<div class="registrerFormGruppe">
+				<label id="registrerLblBrukernavn" for="registrerBrukernavn">Brukernavn:</label>
+				<input id="registrerBrukernavn" type="text" placeholder="........" required="">
+			</div>
+			<div class="registrerFormGruppe">
+				<label id="registrerLblFornavn" for="registrerFornavn">Fornavn:</label>
+				<input id="registrerFornavn" type="text" placeholder="........" required="">
+			</div>
+			<div class="registrerFormGruppe">
+				<label id="registrerLblEtternavn" for="registrerEtternavn">Etternavn:</label>
+				<input id="registrerEtternavn" type="text" placeholder="........" required="">
+			</div>
+			<div class="registrerFormGruppe">
+				<label id="registrerLblTel" for="registrerTel">Telefonnummer:</label>
+				<input id="registrerTel" type="tel" placeholder="........" required="">
+			</div>
+			<div class="registrerFormGruppe">
+				<label id="registrerLblEpost" for="registrerEpost">E-postadresse:</label>
+				<input id="registrerEpost" type="email" placeholder="........" required="">
+			</div>
+			<div class="registrerFormGruppe">
+				<label id="registrerLblPassord" for="registrerPassord">Passord:</label>
+				<input id="registrerPassord" type="password" placeholder="........" required="">
+			</div>
+			<div id="regVertGruppe">
+				<label for="registrerVert">Dersom du skal benytte Home Rentals for å <b>leie ut din bolig</b>, så huker du av her:
+				<input id="registrerVert" type="checkbox"></label>
+			</div>
+			<div id="regVilkarGruppe">
+				<label for="regVilkar">Jeg har lest og akseptert Home Rentals <a href="vilkar.html" target="_blank">bruksvilkår</a>, 
+				<a href="personvern.html" target="_blank">personvernerklæring</a>				
+				og <a href="sikkerhet.html" target="_blank">sikkerhetserklæring</a>.
+				<input id="regVilkar" type="checkbox" required=""></label>
+			</div>
+            <button id="registrerSubmit" type="submit"><b>Registrer deg</b></button>
+			<p>Har du allerede en bruker så kan du logge inn ved å klikke her!</p>
+            <a id="regLoggin" href="logginn.html">Logg inn her</a>
+        </form>
+		<div id="popupReg" class="hidden">
+			<div class="popupRegInnhold">
+				<h2>Gratulerer!</h2>
+				<p>Din bruker er nå registrert.</p>
+				<a href="hjem.html">Gå til forsiden</a>
+			</div>
+		</div>
+    </div>
+	
+	<footer>
+		<div>Home Rentals &copy; 2025</div>
+	</footer>
+</body>
+</html>

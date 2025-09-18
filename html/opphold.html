@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" href="../bilder/logo.png" type="image/icon type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Opphold - Home Rentals</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<a href="hjem.html"><img class="logo" src="../bilder/logo.png" alt="home rentals logo"></a>
+			<form class="navbarForm">
+				<input class="sokeFelt" type="text" placeholder="Hvor vil du reise?" name="search">
+				<button class="sokeKnapp" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			
+			<div class="navbarHoyre">
+				<div class="brukerIcon">
+					<a href="logginn.html"><strong>Logg Inn</strong></a>
+					<a href="registrering.html"><strong>Registrer Deg</strong></a>
+				</div>
+				<div class="profilDropdown">
+					<a class="profilDropbtn" href="minSide.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<a href="minSide.html"><strong>Min Side</strong></a>
+						<a href="soknad.html"><strong>Søknader</strong></a>
+						<a href="meldinger.html"><strong>Meldinger</strong></a>
+						<a href="favoritter.html"><strong>Favoritter</strong></a>
+						<a href="mineBoenheter.html"><strong>Mine Boenheter</strong></a>
+                        <a href="regBoenhet.html"><strong>Registrer Boenhet</strong></a>
+						<a href="opphold.html"><strong>Opphold</strong></a>
+						<a href="kontakt.html"><strong>Kontakt Oss</strong></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<main id="oppholdMain">
+			<h1>Opphold</h1>
+			<div class="opphold">
+				<div id="oppholdListe">
+					<div class="oppholdListeBoenhet">
+						<img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bilde av fjordveien 10">
+						<h3>Fjordveien 10</h3>
+						<p>Innsjekk: 01.06.2023</p>
+						<p>Utsjekk: 07.06.2023</p>
+					</div>
+					<div class="oppholdListeBoenhet">
+						<img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bilde av fjordveien 10">
+						<h3>Fjordveien 10</h3>
+						<p>Innsjekk: 01.07.2023</p>
+						<p>Utsjekk: 14.07.2023</p>
+					</div>
+				</div>
+				<div id="oppholdBoenhet">
+					<img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bilde av fjordveien 10">
+					<p>Fjordveien 10</p>
+					<p>1 soverom 2 senger 1 bad</p>
+					<h3>Booking-detaljer</h3>
+					<table>
+						<tr>
+							<th>Innsjekksdato</th>
+							<th>Utsjekksdato</th>
+							<th>Beløp</th>
+							<th>Status</th>
+						</tr>
+						<tr>
+							<td>01.06.2023</td>
+							<td>07.06.2023</td>
+							<td>4800</td>
+							<td>Betalt</td>
+						</tr>
+					</table>
+					<br>
+					<h3>Betalingsdetaljer</h3>
+					<table>
+						<tr>
+							<th>Betaling</th>
+							<th>Dato</th>
+							<th>Betalingsmetode</th>
+							<th>Beløp</th>
+							<th>Status</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>28.05.2023</td>
+							<td>Visa</td>
+							<td>4800</td>
+							<td>Betalt</td>
+						</tr>
+					</table>
+					<br>
+					<button id="oppholdSend">Kanseler opphold</button>
+					<br>
+					<h3>Anmeldelse:</h3>
+					<form class="oppholdAnmeldelse">
+						<label for="rangering">Rangering:</label><br>
+						<input type="range" id="rangering" name="rangering" min="0" max="10" value="0"><br><br>
+						<label for="kommentar">Kommentar:</label><br>
+						<textarea name="kommentar" id="kommentar" rows="5" cols="50"></textarea><br>
+						<br>
+						<input id="oppholdSend" type="submit" value="Send">
+					</form>
+					<br><br><br><br>
+				</div>
+				<div>
+					<form id="oppholdEndreOpphold">
+						<label for="nyInnsjekk">Ny innsjekksdato</label><br><br>
+						<input type="date" name="nyInnsjekk" id="nyInnsjekk"><br><br>
+						<label for="nyUtsjekk">Ny utsjekksdato</label><br><br>
+						<input type="date" name="nyUtsjekk" id="nyUtsjekk"><br><br>
+						<input type="submit" value="Endre opphold"><br>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div>Home Rentals &copy; 2025</div>
+		</footer>
+	</body>
+</html>
