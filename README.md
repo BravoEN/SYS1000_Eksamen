@@ -1,6 +1,7 @@
 # SYS1000 Eksamens oppgave over ett semester
 
 Vi skal lage en nettsideprototype for fantasikunden "Homerentals"
+
 Prosjektet var ikke utviklet med git så commit historien viser ikke reel historikk på hvem som gjorde hva
 
 ## Medlemmer
